@@ -82,23 +82,65 @@ if(true){
 // console.log("ORIGINAL", data);
 // console.log("COPY", copy);
 
-const data = {
-    test: 'test',
-    userDetails: {
-        address: 
-        {
-            municipality: 'montevista',
-            province: 'davao de oro',
-            country: 'philippines'
-        }
-    }
-}
+// const data = {
+//     test: 'test',
+//     userDetails: {
+//         address: 
+//         {
+//             municipality: 'montevista',
+//             province: 'davao de oro',
+//             country: 'philippines'
+//         }
+//     }
+// }
+// //gamit ug Object.assign(()); method
+// const copy = Object.assign({}, data);
+// ; data.test = 'PADAYON!';
 
-//gamit ug Object.assign(()); method
-const copy = Object.assign({}, data);
+// console.log("COPY", copy);
+// console.log("ORIGINAL", data)
 
-data.test = 'PADAYON!';
 
-console.log("COPY", copy);
-console.log("ORIGINAL", data);
+
+//FOR DEEP COPY USING JSON.PARSE(STRINGIFY)
+// const data = {
+//     test: 'test',
+//     userDetails: {
+//         address: 
+//         {
+//             municipality: 'montevista',
+//             province: 'davao de oro',
+//             country: 'philippines'
+//         }
+//     },
+//     myFn: () => {},
+//     undef: undefined,
+// }
+// //gamit ug Object.assign(()); method
+// const copy = JSON.parse(JSON.stringify(data));
+// data.test = 'PADAYON!';
+
+// console.log("COPY", copy);
+// console.log("ORIGINAL", data);
+
+
+//SHALLOW COPY AND DEEP COPY IN AN ARRAY 
+//SHALLOW COPY USING SLICE
+// const orig = ['mark', 'marco', {newProgrammer: 'WAIL'}];
+// const copy = orig.slice();
+// copy[2].newProgrammer = 'PAUL JORGE';
+// copy.push('evan');
+// console.log("ORIG", orig);
+// console.log('COPY', copy);
+
+
+//DEEP COPY USING JSON.PARESE(STRINGIFY)
+const orig = ['mark', 'marco', {newProgrammer: 'WAIL'}];
+const copy = JSON.parse(JSON.stringify(orig));
+copy[2].newProgrammer = 'PAUL JORGE';
+copy.push('evan');
+
+console.log("ORIG", orig);
+console.log('COPY', copy);
+
 
