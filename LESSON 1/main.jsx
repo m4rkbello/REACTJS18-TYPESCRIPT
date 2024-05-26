@@ -139,7 +139,6 @@ if(true){
 // const copy = JSON.parse(JSON.stringify(orig));
 // copy[2].newProgrammer = 'PAUL JORGE';
 // copy.push('evan');
-
 // console.log("ORIG", orig);
 // console.log('COPY', copy);
 
@@ -154,7 +153,7 @@ if(true){
 // }
 // console.log(sum(10, 10, 10));
 
-//SPREAD OPERATORS 
+//SPREAD OPERATORS SHALLOW COPY - OBJECTS
 // const userDetails = {
 //     name: 'Mark Bello',
 //     address: 'Davao',
@@ -165,6 +164,28 @@ if(true){
 
 // const newUserDetails = { ...userDetails, name: 'BOYBOY'} 
 // newUserDetails.work.padayon = 'WORTH IT LAGI NI';
-
 // console.log(userDetails);
 // console.log(newUserDetails);
+
+
+//SPREAD OPERATORS SHALLOW COPY - ARRAYS
+// const data = ['MARK', 'BELLO'];
+// const newData = [...data, 'PADAYON LANG!'];
+// console.log(data);
+// console.log(newData);
+
+
+//DESTRUCTURING SHALLOW COPY 
+// const personalData = {
+//     name: 'Mark',
+//     address: 'Davao',
+//     email: 'markbello10041999@gmail.com',
+//     work: {
+//         frontend: 'FRONTEND WEB DEVELOPER',
+//         backend: 'BACKEND WEB DEVELOPER'
+//     }
+// }
+
+// const {work: {frontend}, ...otherDatas} = personalData;
+// console.log("DESTRUCTURING USING OBJECT", frontend);
+// console.log("DATA", otherDatas);
