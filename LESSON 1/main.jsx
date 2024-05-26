@@ -189,3 +189,12 @@ if(true){
 // const {work: {frontend}, ...otherDatas} = personalData;
 // console.log("DESTRUCTURING USING OBJECT", frontend);
 // console.log("DATA", otherDatas);
+
+
+//DESCTRUCTURING ARRAYS 
+// const infinit = ['Mark', 'Bello', 'Boy2'];
+
+// const [firstInfinit, ...otherInfinit] = infinit;
+
+// console.log("test",firstInfinit);
+// console.log("test 2", otherInfinit);
