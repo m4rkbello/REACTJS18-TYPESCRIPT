@@ -135,12 +135,26 @@ if(true){
 
 
 //DEEP COPY USING JSON.PARESE(STRINGIFY)
-const orig = ['mark', 'marco', {newProgrammer: 'WAIL'}];
-const copy = JSON.parse(JSON.stringify(orig));
-copy[2].newProgrammer = 'PAUL JORGE';
-copy.push('evan');
+// const orig = ['mark', 'marco', {newProgrammer: 'WAIL'}];
+// const copy = JSON.parse(JSON.stringify(orig));
+// copy[2].newProgrammer = 'PAUL JORGE';
+// copy.push('evan');
 
-console.log("ORIG", orig);
-console.log('COPY', copy);
+// console.log("ORIG", orig);
+// console.log('COPY', copy);
 
 
+//SPREAD OPERATOR - REST PARAMETERS - DESCTRUCTURING
+
+
+
+//REST PARAMETERS EXAMPLE
+
+function sum(...thisArgs) {
+    return thisArgs.reduce(function(previous, current){
+        return previous + current;
+    })
+}
+
+
+console.log(sum(10, 10, 10));
