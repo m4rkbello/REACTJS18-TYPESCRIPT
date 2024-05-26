@@ -146,15 +146,11 @@ if(true){
 
 //SPREAD OPERATOR - REST PARAMETERS - DESCTRUCTURING
 
-
-
-//REST PARAMETERS EXAMPLE
-
+//REST PARAMETERS EXAMPLE 
 function sum(...thisArgs) {
     return thisArgs.reduce(function(previous, current){
         return previous + current;
     })
 }
-
 
 console.log(sum(10, 10, 10));
