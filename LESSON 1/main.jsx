@@ -147,10 +147,24 @@ if(true){
 //SPREAD OPERATOR - REST PARAMETERS - DESCTRUCTURING
 
 //REST PARAMETERS EXAMPLE 
-function sum(...thisArgs) {
-    return thisArgs.reduce(function(previous, current){
-        return previous + current;
-    })
-}
+// function sum(...thisArgs) {
+//     return thisArgs.reduce(function(previous, current){
+//         return previous + current;
+//     })
+// }
+// console.log(sum(10, 10, 10));
 
-console.log(sum(10, 10, 10));
+//SPREAD OPERATORS 
+// const userDetails = {
+//     name: 'Mark Bello',
+//     address: 'Davao',
+//     work: {
+//         test: 'Data'
+//     }
+// }
+
+// const newUserDetails = { ...userDetails, name: 'BOYBOY'} 
+// newUserDetails.work.padayon = 'WORTH IT LAGI NI';
+
+// console.log(userDetails);
+// console.log(newUserDetails);
