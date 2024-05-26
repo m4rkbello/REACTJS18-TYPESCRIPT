@@ -190,7 +190,6 @@ if(true){
 // console.log("DESTRUCTURING USING OBJECT", frontend);
 // console.log("DATA", otherDatas);
 
-
 //DESCTRUCTURING ARRAYS 
 // const infinit = ['Mark', 'Bello', 'Boy2'];
 
@@ -198,3 +197,55 @@ if(true){
 
 // console.log("test",firstInfinit);
 // console.log("test 2", otherInfinit);
+
+
+//CLASSES
+// class Shape {
+//     #privateVaribale = 'privateVariable choi!'
+//     publicVariable = 'publicVariable ni choi!'
+//     static staticVariable = 'staticVariable ni choi!'
+
+//     constructor(height, width){
+//         this.height = height;
+//         this.width = width;
+//     }
+// }
+
+// const myShape = new Shape(500, 600);
+
+// console.log(myShape.height);
+// console.log(Shape.staticVariable);
+
+
+class Shape {
+    #privateVaribale = 'privateVariable choi!'
+    publicVariable = 'publicVariable ni choi!'
+    static staticVariable = 'staticVariable ni choi!'
+
+    constructor(height, width){
+        this.height = height;
+        this.width = width;
+    }
+
+    getArea(){
+        return 'ATIK ATIK!';
+    }
+
+}
+
+class total extends Shape{
+    getArea() {
+        return this.height * this.width;
+    }
+
+    getSUperArea() {
+        return super.getArea();
+    }
+}
+
+const myShape = new total(500, 600);
+
+console.log(myShape.getArea());
+console.log(myShape.getSUperArea());
+// console.log(Shape.staticVariable);
+
