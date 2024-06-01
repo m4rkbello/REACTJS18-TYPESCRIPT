@@ -219,6 +219,7 @@ if(true){
 
 class Shape {
     #privateVaribale = 'privateVariable choi!'
+    #privateVariableNi = 'BUNAL!';
     publicVariable = 'publicVariable ni choi!'
     static staticVariable = 'staticVariable ni choi!'
 
@@ -229,6 +230,10 @@ class Shape {
 
     getArea(){
         return 'ATIK ATIK!';
+    }
+
+    getPrivateData() {
+        return this.#privateVariableNi;
     }
 
 }
@@ -248,4 +253,5 @@ const myShape = new total(500, 600);
 console.log(myShape.getArea());
 console.log(myShape.getSUperArea());
 console.log(Shape.staticVariable);
+console.log(myShape.getPrivateData());
 
