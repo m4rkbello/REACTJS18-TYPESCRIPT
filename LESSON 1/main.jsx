@@ -283,11 +283,11 @@
 //     }
 // }
 
-const iAm = new Person();
+// const iAm = new Person();
 
 //DISPLAY THE CLASS CHILD COMPONENT AND VALUE
-iAm.printName();
-iAm.printNameArrowFn();
+// iAm.printName();
+// iAm.printNameArrowFn();
 
 
 // class Data {
@@ -371,16 +371,63 @@ iAm.printNameArrowFn();
 
 // PROMISE AND ASYNC+AWAIT! ############################################################################################################
 
+//SET TIMEOUT!
+// function calculateSquareArea() {
+//     setTimeout(() => {
+//         const squareArea = 500*200;
+//         console.log(squareArea);
+
+//     }, 500);
+// }
+
+// calculateSquareArea();
+
+
+//PROMISE WITH SET TIMEOUT WITH INHERETANCE ###########################################################################################################
+// function calculateSquareAreaData() {
+//     return new Promise(function(resolve, reject){
+//         setTimeout(() => {
+//             const squareData = 5*5;
+//             resolve(squareData);
+//         }, 500);
+//     })
+// }
+
+
+// function onFulfilled(data) {
+//     console.log("onFullfilled data:", data);
+// }
+
+// function onRejected(reason){
+//     console.log('onRejected data:', reason);
+// }
+
+// calculateSquareAreaData()
+// .then(onFulfilled, onRejected)
+// .catch((reason) => {
+//     console.log("REASON NAGA ERROR!", reason);
+// });
 
 
 
 
+//PROMISE WITH SET TIMEOUT AND THEN AND CATCH USING ARRAYS! #########################################################################################
+const arraysPromises = [
+    new Promise((resolve, reject) => setTimeout(() => reject("bunal"), 500)),
+    new Promise((resolve, reject) => setTimeout(() => resolve(200), 200)),
+    new Promise((resolve, reject) => setTimeout(() => resolve(300), 300)),
+];
 
+function onFulfilled(data){
+        console.log('DATA!', data);
+}
 
-
-
-
-
+//all, allSettled, any, race
+Promise.any(arraysPromises)
+    .then(onFulfilled)
+    .catch((reason) => {
+        console.log("SANAOL MAY REASON", reason);
+    });
 
 
 
