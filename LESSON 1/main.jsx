@@ -1,3 +1,7 @@
+// Importing the functions from modules.js
+// import { getData, getValue, padayonLang, padayonReactTypescript } from './ExportSamples';
+
+
 //FOR HOISTING ###################################################################################################################
 // console.log(typescript3);
 // var typescript1 = 'test';
@@ -428,34 +432,34 @@
 // });
 
 
-
 //PROMISE AND ASYNC+AWAIT  ###############################################################################################################################
-let count = null;
-let sum = null;
-total = null;
+// let count = null;
+// let sum = null;
+// total = null;
 
-function changeNumber() {
-    return new Promise((resolve) => {
-        setTimeout(() => {
-            count = 4;
-            sum = 5
-            total = count + sum;
+// function changeNumber() {
+//     return new Promise((resolve) => {
+//         setTimeout(() => {
+//             count = 4;
+//             sum = 5
+//             total = count + sum;
 
-            resolve(total);
-        }, 5000);
-    })
-}
+//             resolve(total);
+//         }, 5000);
+//     })
+// }
 
-async function changes() {
-    await changeNumber();
-    console.log("DATA!", total);
-}
+// async function changes() {
+//     await changeNumber();
+//     console.log("DATA!", total);
+// }
 
-//callback
-changes();
+// //callback
+// changes();
 
+//EXPORT AND IMPORT ######################################################################################################################################
 
-
+//EXPORT FUNCTION BEFORE DECLARATION  ###############################
 
 
 
