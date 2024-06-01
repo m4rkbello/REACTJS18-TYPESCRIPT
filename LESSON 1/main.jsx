@@ -430,22 +430,28 @@
 
 
 //PROMISE AND ASYNC+AWAIT  ###############################################################################################################################
-let count = 4;
+let count = null;
+let sum = null;
+total = null;
 
 function changeNumber() {
     return new Promise((resolve) => {
         setTimeout(() => {
             count = 4;
-            resolve(count);
+            sum = 5
+            total = count + sum;
+
+            resolve(total);
         }, 5000);
     })
 }
 
 async function changes() {
     await changeNumber();
-    console.log("DATA!", count);
+    console.log("DATA!", total);
 }
 
+//callback
 changes();
 
 
