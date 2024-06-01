@@ -409,8 +409,6 @@
 // });
 
 
-
-
 //PROMISE WITH SET TIMEOUT AND THEN AND CATCH USING ARRAYS! #########################################################################################
 const arraysPromises = [
     new Promise((resolve, reject) => setTimeout(() => reject("bunal"), 500)),
