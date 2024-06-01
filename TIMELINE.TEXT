@@ -1,2 +1,32 @@
-1. REFRESH YOUR JAVASCRIPT 
-2. test
+<!-------------------------------JAVASCRIPT CORE CONCEPT NEED TO GO REACTJS-------------------------------!>
+1. SCOPE
+2. Hoisting
+3. BLOCK SCOPE
+4. LOGICAL OR AND AND || X &&
+5. PRIMITIVE VALUES 
+6. REFERENCE TYPE 
+7. SHALLOW COPY 
+8. DEEP COPY 
+9. SPREAD OPERATORS 
+10. REST PARAMETERS
+11. DESTRUCTURING
+12. CLASSES 
+13. This Object 
+14. ARROW FUNCTION (using this method)
+15. ASYNCHRONOUS CODE 
+16. CALLBACK HELL 
+17. PROMISE 
+18. ASYNC AND AWAIT 
+19. EXPORT / IMPORT 
+
+
+<!-------------------------------TOOLS AND HOW TO SETUP REACTJS-------------------------------!>
+1. NODEJS (node -v) version 18.17.0
+2. YARN OR NPM I
+3. CREATE-REACT-APP (CRA FRAMEWORK)
+
+
+1. INSTALL YARN GLOBALLY
+-> npm i --global yarn 
+2. CREATE REACT APP TYPESCRIPT (TEMPLATE)
+->yarn create react-app reactjs18_typescript_masterclass --template typescript
