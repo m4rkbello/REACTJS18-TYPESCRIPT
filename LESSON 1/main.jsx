@@ -410,22 +410,44 @@
 
 
 //PROMISE WITH SET TIMEOUT AND THEN AND CATCH USING ARRAYS! #########################################################################################
-const arraysPromises = [
-    new Promise((resolve, reject) => setTimeout(() => reject("bunal"), 500)),
-    new Promise((resolve, reject) => setTimeout(() => resolve(200), 200)),
-    new Promise((resolve, reject) => setTimeout(() => resolve(300), 300)),
-];
+// const arraysPromises = [
+//     new Promise((resolve, reject) => setTimeout(() => reject("bunal"), 500)),
+//     new Promise((resolve, reject) => setTimeout(() => resolve(200), 200)),
+//     new Promise((resolve, reject) => setTimeout(() => resolve(300), 300)),
+// ];
 
-function onFulfilled(data){
-        console.log('DATA!', data);
+// function onFulfilled(data){
+//         console.log('DATA!', data);
+// }
+
+// //all, allSettled, any, race ######
+// Promise.any(arraysPromises)
+//     .then(onFulfilled)
+//     .catch((reason) => {
+//         console.log("SANAOL MAY REASON", reason);
+// });
+
+
+
+//PROMISE AND ASYNC+AWAIT  ###############################################################################################################################
+
+let count = 4;
+
+function changeNumber() {
+    return new Promise((resolve) => {
+        setTimeout(() => {
+            count = 4;
+            resolve(count);
+        }, 500);
+    })
 }
 
-//all, allSettled, any, race
-Promise.any(arraysPromises)
-    .then(onFulfilled)
-    .catch((reason) => {
-        console.log("SANAOL MAY REASON", reason);
-    });
+function changes() {
+    changeNumber();
+    console.log("DATA!", count);
+}
+
+changes();
 
 
 
