@@ -247,5 +247,5 @@ const myShape = new total(500, 600);
 
 console.log(myShape.getArea());
 console.log(myShape.getSUperArea());
-// console.log(Shape.staticVariable);
+console.log(Shape.staticVariable);
 
