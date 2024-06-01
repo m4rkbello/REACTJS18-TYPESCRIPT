@@ -437,12 +437,12 @@ function changeNumber() {
         setTimeout(() => {
             count = 4;
             resolve(count);
-        }, 500);
+        }, 5000);
     })
 }
 
-function changes() {
-    changeNumber();
+async function changes() {
+    await changeNumber();
     console.log("DATA!", count);
 }
 
