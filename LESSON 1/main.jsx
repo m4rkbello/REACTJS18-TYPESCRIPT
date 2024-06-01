@@ -1,4 +1,4 @@
-//FOR HOISTING
+//FOR HOISTING ###################################################################################################################
 // console.log(typescript3);
 // var typescript1 = 'test';
 // let typescript2 = 'test';
@@ -11,20 +11,19 @@
 // typescript();
 
 
-//FUNCTION BLOCK SCOPE 
-if(true){
-    var typescript = 'typescript';
-    //result is true;
+//FUNCTION BLOCK SCOPE  ##########################################################################################################
+// if(true){
+//     var typescript = 'typescript';
+//     result is true;
     
-    // let typescript = 'typescript';
-    //result is Uncaught SyntaxError: Identifier 'typescript' has already been declared (at main.jsx:17:9)
+//     let typescript = 'typescript';
+//     result is Uncaught SyntaxError: Identifier 'typescript' has already been declared (at main.jsx:17:9)
 
-    // const typescript = 'typescript';
-    //result is ReferenceError: typescript is not defined at main.jsx:27:13
-}
+//     const typescript = 'typescript';
+//     result is ReferenceError: typescript is not defined at main.jsx:27:13
+// }
 
 // console.log(typescript);
-
 
 //FUNCTION REFACTORY SYNTAX
 // for(let ez = 0; ez < 3; ez++){
@@ -33,8 +32,7 @@ if(true){
 //     })(ez)
 // }
 
-
-//PRIMITIVE TYPES VALUES   
+//PRIMITIVE TYPES VALUES ###########################################################################################################
 // let firstNumber = 100;
 // let copyFirstNumber = firstNumber;
 // firstNumber = 1000;
@@ -50,7 +48,7 @@ if(true){
 // console.log("ARRAY 2", copyFirstArray);
 
 
-//PREMITIVE TYPES WITH OBJECTS
+//PREMITIVE TYPES WITH OBJECTS 
 // let personalDetails  = { 
 //     firstname: 'mark',
 //     lastname: 'bello',
@@ -61,7 +59,7 @@ if(true){
 // console.log(bioData);
 
 
-//OBJECTS AND ARRAYS COPYING USING SHALLOW COPY AND DEEP COPY!
+//OBJECTS AND ARRAYS COPYING USING SHALLOW COPY AND DEEP COPY! #############################################################################
 
 //reference type deep copy
 // const data = {
@@ -99,7 +97,6 @@ if(true){
 
 // console.log("COPY", copy);
 // console.log("ORIGINAL", data)
-
 
 
 //FOR DEEP COPY USING JSON.PARSE(STRINGIFY)
@@ -199,7 +196,7 @@ if(true){
 // console.log("test 2", otherInfinit);
 
 
-//CLASSES
+//CLASSES #########################################################################################################
 // class Shape {
 //     #privateVaribale = 'privateVariable choi!'
 //     publicVariable = 'publicVariable ni choi!'
@@ -217,41 +214,165 @@ if(true){
 // console.log(Shape.staticVariable);
 
 
-class Shape {
-    #privateVaribale = 'privateVariable choi!'
-    #privateVariableNi = 'BUNAL!';
-    publicVariable = 'publicVariable ni choi!'
-    static staticVariable = 'staticVariable ni choi!'
+// class Shape {
+//     #privateVaribale = 'privateVariable choi!'
+//     #privateVariableNi = 'BUNAL!';
+//     publicVariable = 'publicVariable ni choi!'
+//     static staticVariable = 'staticVariable ni choi!'
 
-    constructor(height, width){
-        this.height = height;
-        this.width = width;
+//     constructor(height, width){
+//         this.height = height;
+//         this.width = width;
+//     }
+
+//     getArea(){
+//         return 'ATIK ATIK!';
+//     }
+
+//     getPrivateData() {
+//         return this.#privateVariableNi;
+//     }
+// }
+
+// class total extends Shape{
+//     getArea() {
+//         return this.height * this.width;
+//     }
+
+//     getSUperArea() {
+//         return super.getArea();
+//     }
+// }
+
+// const myShape = new total(500, 600);
+
+// console.log(myShape.getArea());
+// console.log(myShape.getSUperArea());
+// console.log(Shape.staticVariable);
+// console.log(myShape.getPrivateData());
+
+
+//THIS OBJECT + ARROW FUNCTION #########################################################################################################
+
+// const userDetails = {
+//     name: 'MARK BELLO',
+//     getData: function() {
+//         return this.name; //gikuha niyang name 
+//     }
+// }
+
+// console.log("OBJECT + ARROW FUNCTION", userDetails.getData);
+
+
+class Person {
+    name = "MARK BELLO";
+    printName() {
+        console.log('MY NAME IS', this.name)
+    }
+ 
+    printNameArrowFn() {
+        const userDetails = {
+            name: 'PADAYON!',
+            printName: () => {
+                console.log('ArrowFn user Details', this.name);
+            }
+
+        };
+
+       return userDetails.printName();
+    }
+}
+
+const iAm = new Person();
+
+//DISPLAY THE CLASS CHILD COMPONENT AND VALUE
+iAm.printName();
+iAm.printNameArrowFn();
+
+
+class Data {
+    content = 'REACT18 + TYPESCRIPT!';
+
+    fnContent() {
+        console.log("DATA SA content", this.content);
     }
 
-    getArea(){
-        return 'ATIK ATIK!';
-    }
+    arrowFnContent() {
+        const objectContent = {
+            content: 'SELF TAUGHT!',
+            printConent: () => {
+                console.log("DATA SA objectContent", this.content);
+            }
 
-    getPrivateData() {
-        return this.#privateVariableNi;
+            
+        }
+       return objectContent.printConent();
+    }
+    
+}
+
+allContent = new Data();
+allContent.fnContent();
+allContent.arrowFnContent();
+
+
+
+
+class InfinitProgrammers{
+    names = ['MARK', 'MARKO', 'EVAN', 'JOSHUA', 'CHARLES'];
+
+    programmersList(){
+        console.log('PROGRAMMER DATA', this.names);
+    } 
+
+    programmersArrowFn () {
+        const programmersActive = {
+            names: ['NIGS', 'JAMES','RUSSELL','MARK ALFRED'],
+            printName: () => {
+                console.log("DATA SA", this.names);
+            }
+        }
+        return programmersActive.printName();
     }
 
 }
 
-class total extends Shape{
-    getArea() {
-        return this.height * this.width;
-    }
 
-    getSUperArea() {
-        return super.getArea();
-    }
-}
+infinitData = new InfinitProgrammers();
+infinitData.programmersList();
+infinitData.programmersArrowFn();
 
-const myShape = new total(500, 600);
 
-console.log(myShape.getArea());
-console.log(myShape.getSUperArea());
-console.log(Shape.staticVariable);
-console.log(myShape.getPrivateData());
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
