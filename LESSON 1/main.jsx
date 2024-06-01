@@ -264,24 +264,24 @@
 // console.log("OBJECT + ARROW FUNCTION", userDetails.getData);
 
 
-class Person {
-    name = "MARK BELLO";
-    printName() {
-        console.log('MY NAME IS', this.name)
-    }
+// class Person {
+//     name = "MARK BELLO";
+//     printName() {
+//         console.log('MY NAME IS', this.name)
+//     }
  
-    printNameArrowFn() {
-        const userDetails = {
-            name: 'PADAYON!',
-            printName: () => {
-                console.log('ArrowFn user Details', this.name);
-            }
+//     printNameArrowFn() {
+//         const userDetails = {
+//             name: 'PADAYON!',
+//             printName: () => {
+//                 console.log('ArrowFn user Details', this.name);
+//             }
 
-        };
+//         };
 
-       return userDetails.printName();
-    }
-}
+//        return userDetails.printName();
+//     }
+// }
 
 const iAm = new Person();
 
@@ -290,85 +290,86 @@ iAm.printName();
 iAm.printNameArrowFn();
 
 
-class Data {
-    content = 'REACT18 + TYPESCRIPT!';
+// class Data {
+//     content = 'REACT18 + TYPESCRIPT!';
 
-    fnContent() {
-        console.log("DATA SA content", this.content);
-    }
+//     fnContent() {
+//         console.log("DATA SA content", this.content);
+//     }
 
-    arrowFnContent() {
-        const objectContent = {
-            content: 'SELF TAUGHT!',
-            printConent: () => {
-                console.log("DATA SA objectContent", this.content);
-            }
+//     arrowFnContent() {
+//         const objectContent = {
+//             content: 'SELF TAUGHT!',
+//             printConent: () => {
+//                 console.log("DATA SA objectContent", this.content);
+//             }
 
             
-        }
-       return objectContent.printConent();
-    }
+//         }
+//        return objectContent.printConent();
+//     }
     
-}
+// }
 
-allContent = new Data();
-allContent.fnContent();
-allContent.arrowFnContent();
-
-
+// allContent = new Data();
+// allContent.fnContent();
+// allContent.arrowFnContent();
 
 
-class InfinitProgrammers{
-    names = ['MARK', 'MARKO', 'EVAN', 'JOSHUA', 'CHARLES'];
+// class InfinitProgrammers{
+//     names = ['MARK', 'MARKO', 'EVAN', 'JOSHUA', 'CHARLES'];
 
-    programmersList(){
-        console.log('PROGRAMMER DATA', this.names);
-    } 
+//     programmersList(){
+//         console.log('PROGRAMMER DATA', this.names);
+//     } 
 
-    programmersArrowFn () {
-        const programmersActive = {
-            names: ['NIGS', 'JAMES','RUSSELL','MARK ALFRED'],
-            printName: () => {
-                console.log("DATA SA", this.names);
-            }
-        }
-        return programmersActive.printName();
-    }
-}
-
-
-infinitData = new InfinitProgrammers();
-infinitData.programmersList();
-infinitData.programmersArrowFn();
+//     programmersArrowFn () {
+//         const programmersActive = {
+//             names: ['NIGS', 'JAMES','RUSSELL','MARK ALFRED'],
+//             printName: () => {
+//                 console.log("DATA SA", this.names);
+//             }
+//         }
+//         return programmersActive.printName();
+//     }
+// }
 
 
-class Printer {
-    data = "PADAYON RA DIHA KAYA NIMO NA!"
+// infinitData = new InfinitProgrammers();
+// infinitData.programmersList();
+// infinitData.programmersArrowFn();
 
-    //OLD FUNCTION  JS 
-    printNameData(){
-        console.log("OLD SYNTAX JS", this.data);
-    }
 
-    //STANDARD SYNTAX KARUN NA ADLAW!
-    printArrowFnData = () => {
-        console.log("SYNTAX SA ARROW FN", this.data);
-    }
-}
+// class Printer {
+//     data = "PADAYON RA DIHA KAYA NIMO NA!"
 
-onClickToPrint = new Printer();
+//     //OLD FUNCTION  JS 
+//     printNameData(){
+//         console.log("OLD SYNTAX JS", this.data);
+//     }
+
+//     //STANDARD SYNTAX KARUN NA ADLAW!
+//     printArrowFnData = () => {
+//         console.log("SYNTAX SA ARROW FN", this.data);
+//     }
+// }
+
+// onClickToPrint = new Printer();
 // onClickToPrint.printNameData();
 // onClickToPrint.printArrowFnData();
 
-const customPrinter = {
-    name: 'PADAYON LANG!',
-    printNameRef: onClickToPrint.printArrowFnData,
-    printNameArrowFnRef: onClickToPrint.printArrowFnData,
+// const customPrinter = {
+//     name: 'PADAYON LANG!',
+//     printNameRef: onClickToPrint.printArrowFnData,
+//     printNameArrowFnRef: onClickToPrint.printArrowFnData,
 
-}
+// }
 
-customPrinter.printNameRef();
-customPrinter.printNameArrowFnRef();
+// customPrinter.printNameRef();
+// customPrinter.printNameArrowFnRef();
+
+
+
 
 
 
