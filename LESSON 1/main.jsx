@@ -334,7 +334,6 @@ class InfinitProgrammers{
         }
         return programmersActive.printName();
     }
-
 }
 
 
@@ -343,9 +342,33 @@ infinitData.programmersList();
 infinitData.programmersArrowFn();
 
 
+class Printer {
+    data = "PADAYON RA DIHA KAYA NIMO NA!"
 
+    //OLD FUNCTION  JS 
+    printNameData(){
+        console.log("OLD SYNTAX JS", this.data);
+    }
 
+    //STANDARD SYNTAX KARUN NA ADLAW!
+    printArrowFnData = () => {
+        console.log("SYNTAX SA ARROW FN", this.data);
+    }
+}
 
+onClickToPrint = new Printer();
+// onClickToPrint.printNameData();
+// onClickToPrint.printArrowFnData();
+
+const customPrinter = {
+    name: 'PADAYON LANG!',
+    printNameRef: onClickToPrint.printArrowFnData,
+    printNameArrowFnRef: onClickToPrint.printArrowFnData,
+
+}
+
+customPrinter.printNameRef();
+customPrinter.printNameArrowFnRef();
 
 
 
