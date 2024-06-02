@@ -1,9 +1,11 @@
-import React from 'react';
+
+import {Button} from '../src/components/button/index'; // Assuming Button is a default export
 
 function App() {
   return (
     <div className="App">
-      <h1>test</h1>
+      <h1>REACT+TYPESCRIPT</h1>
+      <Button />
     </div>
   );
 }
