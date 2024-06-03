@@ -1,6 +1,10 @@
 import React, { isValidElement } from "react";
-import { Button } from "../src/components/button/index"; // Assuming Button is a default export
-import { Keys } from "./components/Keys/Index";
+
+import { Button } from "../src/components/button/index"; //Component and Props
+import { Keys } from "./components/Keys/Index"; //Style and Class, List and Keys
+import { Post } from "./components/Post/index";
+
+
 
 function App() {
   console.log("isValidElement", isValidElement(<p />));
@@ -25,13 +29,20 @@ function App() {
         LIST AND KEYS
         <Keys />
       </div>
-
+      <div>
+          CONDITIONAL AND RENDERING 
+          <Post />
+        </div>
       <Button
         type="primary"
         onClick={() => console.log("Reusable handleClick")}
       >
+
+ 
         Click
       </Button>
+
+
     </div>
   );
 }
