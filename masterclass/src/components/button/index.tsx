@@ -1,13 +1,23 @@
 import React from "react";
 
-export const Button = () => {
 
+interface IButtonProps {
+    children: React.ReactNode;
+    onClick: () => void;
+}
+
+
+export const Button: React.FC <IButtonProps> = ({children, onClick}) => {
+
+    //FUCNTION
     const handleClickBtn = () => {
         console.log("CLICKED!");
     };
 
-    return<>
-        <button onClick={handleClickBtn}>Click me</button>
-    </>;
+    return(
+    <React.Fragment>
+        <button onClick={onClick}>{children}</button>
+    </React.Fragment>
+    );
 };
 
