@@ -5,11 +5,10 @@ function App() {
 
   console.log("isValidElement", isValidElement(<p/>))
 
-
   return (
     <div className="App">
-      <h1>REACT+TYPESCRIPT</h1>
-      <Button onClick={() => console.log("reusable handleClick")}>Click</Button>
+      <h1>REACT18+TYPESCRIPT</h1>
+      <Button type="primary" onClick={() => console.log("Reusable handleClick")}>Click</Button>
     </div>
   );
 }
