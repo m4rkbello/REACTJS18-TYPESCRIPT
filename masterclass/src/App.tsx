@@ -3,6 +3,8 @@ import React, { isValidElement } from "react";
 import { Button } from "../src/components/button/index"; //Component and Props
 import { Keys } from "./components/Keys/Index"; //Style and Class, List and Keys
 import { Post } from "./components/Post/index";
+import { ParentComponent } from "./components/ParentComponent";
+
 
 
 
@@ -41,10 +43,14 @@ function App() {
         type="primary"
         onClick={() => console.log("Reusable handleClick")}
       >
-
- 
         Click
       </Button>
+
+<hr />
+      <div>
+        <ParentComponent counter={5} />
+      </div>
+<hr />
 
 
     </div>
