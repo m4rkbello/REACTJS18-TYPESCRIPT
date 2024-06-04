@@ -6,8 +6,6 @@ import { Post } from "./components/Post/index";
 import { ParentComponent } from "./components/ParentComponent";
 
 
-
-
 function App() {
   console.log("isValidElement", isValidElement(<p />));
 
