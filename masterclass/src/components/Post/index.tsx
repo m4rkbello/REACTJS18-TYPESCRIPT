@@ -7,7 +7,6 @@ interface IPostProps {
 
 export const Post: React.FC <IPostProps> = ({showDate}) => {
     const date = new Date().toDateString();
-
     if(showDate){
         return (
             <div>
