@@ -24,15 +24,19 @@ function App() {
   return (
     <div className="App">
       <h1>REACT18+TYPESCRIPT</h1>
-
+<hr />
       <div>
         LIST AND KEYS
         <Keys />
       </div>
-      <div>
-          CONDITIONAL AND RENDERING 
-          <Post />
-        </div>
+<hr />
+<hr />
+      <div style={{fontSize: '30px'}} >
+          CONDITIONAL AND RENDERING <br />
+          <Post showDate={true} />
+      </div>
+      <hr />
+
       <Button
         type="primary"
         onClick={() => console.log("Reusable handleClick")}
