@@ -5,7 +5,6 @@ import { Keys } from "./components/Keys/Index"; //Style and Class, List and Keys
 import { Post } from "./components/Post/index";
 import { ParentComponent } from "./components/ParentComponent";
 
-
 function App() {
   console.log("isValidElement", isValidElement(<p />));
 
@@ -24,16 +23,16 @@ function App() {
   return (
     <div className="App">
       <h1>REACT18+TYPESCRIPT</h1>
-<hr />
+      <hr />
       <div>
         LIST AND KEYS
         <Keys />
       </div>
-<hr />
-<hr />
-      <div style={{fontSize: '30px'}} >
-          CONDITIONAL AND RENDERING <br />
-          <Post showDate={true} />
+      <hr />
+      <hr />
+      <div style={{ fontSize: "30px" }}>
+        CONDITIONAL AND RENDERING <br />
+        <Post showDate={true} />
       </div>
       <hr />
 
@@ -44,13 +43,11 @@ function App() {
         Click
       </Button>
 
-<hr />
+      <hr />
       <div>
         <ParentComponent counter={5} />
       </div>
-<hr />
-
-
+      <hr />
     </div>
   );
 }
