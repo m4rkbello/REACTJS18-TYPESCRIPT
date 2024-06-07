@@ -9,9 +9,13 @@ export const UseStateHook = () => {
     //useState
     const [counter, setCounter] = useState(calculateCounter);
     const handleAdd = () =>{
+
+        //ANG RESULT IS +1
         // setCounter(counter + 1);
-        // setCounter((counter) => counter+1);
-        // setCounter((counter) => counter+1);
+
+        //ANG RESULT IS +2 
+        setCounter((counter) => counter+500);
+        setCounter((counter) => counter+500);
     };
 
 return (
