@@ -5,6 +5,8 @@ import { Keys } from "./components/Keys/Index"; //Style and Class, List and Keys
 import { Post } from "./components/Post/index";
 import { ParentComponent } from "./components/ParentComponent";
 import { UseStateHook } from "./components/hooks/usestate";
+import { Fruits } from "./components/hooks/usestate/Fruits";
+
 
 function App() {
   console.log("isValidElement", isValidElement(<p />));
@@ -55,6 +57,9 @@ function App() {
       </center>
       <br />
       <br />
+      <hr />
+      <Fruits />
+      <hr />
     </div>
   );
 }
