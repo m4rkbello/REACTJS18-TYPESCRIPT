@@ -7,7 +7,7 @@ const calculateCounter = () => {
 
 export const UseStateHook = () => {
     //useState
-    const [counter, setCounter] = useState(calculateCounter);
+    const [counter, setCounter] = useState<number>(calculateCounter);
     const handleAdd = () =>{
 
         //ANG RESULT IS +1
