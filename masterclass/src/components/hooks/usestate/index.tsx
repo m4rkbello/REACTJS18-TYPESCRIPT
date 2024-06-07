@@ -18,6 +18,8 @@ export const UseStateHook = () => {
         setCounter((counter) => counter+500);
     };
 
+    console.log("RENDER useState!");
+
 return (
     <div>
         <h1>Counter: {counter}</h1>
