@@ -14,8 +14,15 @@ export const UseStateHook = () => {
         // setCounter(counter + 1);
 
         //ANG RESULT IS +2 
+        // setCounter((counter) => counter+500);
+        // setCounter((counter) => counter+500);
+
+        //GAMIT SetTimeout + useState 
         setCounter((counter) => counter+500);
-        setCounter((counter) => counter+500);
+
+        setTimeout(() => {
+            alert(counter)
+        }, 3000);
     };
 
     console.log("RENDER useState!");
