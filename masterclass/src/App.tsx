@@ -6,6 +6,8 @@ import { Post } from "./components/Post/index";
 import { ParentComponent } from "./components/ParentComponent";
 import { UseStateHook } from "./components/hooks/usestate";
 import { Fruits } from "./components/hooks/usestate/Fruits";
+import { ControlledUncontrolledComponents } from "./components/controlleduncontrolledcompponents";
+
 
 
 function App() {
@@ -60,6 +62,7 @@ function App() {
       <hr />
       <Fruits />
       <hr />
+      <ControlledUncontrolledComponents />
     </div>
   );
 }
