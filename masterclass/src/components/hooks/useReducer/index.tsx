@@ -1,42 +1,36 @@
 import React, { useReducer } from "react";
-import { Reducer } from "redux";
 import { ChildIndex } from "./ChildIndex";
 
+// Define the action type
+type Action = number;
 
-const reducer: Reducer<number, number> = (state, action) => {
-    comnsole.log("reducer triggered!");
+// Define the reducer function
+const reducer = (state: number, action: Action): number => {
+    console.log("REDUCER TRIGGERED!");
     return state + action;
+};
+
+const initializer = (dataSaIndex: number) => {
+    console.log("INITIALIZER")
+    
+    return dataSaIndex + 1;
 }
 
-
 export const UseReducerIndexData = () => {
+    // Use useReducer hook with the reducer and initial state
+    const [dataSaIndex, dispatch] = useReducer(reducer, 5, initializer);
 
     const handleAdd = () => {
-        dispatch(1)
-    }
+        dispatch(1);
+    };
 
     console.log("USE REDUCER INDEX");
 
-    const [dataSaIndex, dispatch] = useReducer(reducer, 5);
-
     return (
         <div>
-            <h1>INDEX DATA{dataSaIndex} </h1>
-            <button>INCREMENT</button>
+            <h1>INDEX DATA {dataSaIndex}</h1>
+            <button onClick={handleAdd}>INCREMENT</button>
             <ChildIndex />
         </div>
-    )
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
+    );
+};
