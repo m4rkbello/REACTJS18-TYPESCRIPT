@@ -7,6 +7,7 @@ import { ParentComponent } from "./components/ParentComponent";
 import { UseStateHook } from "./components/hooks/usestate";
 import { Fruits } from "./components/hooks/usestate/Fruits";
 import { ControlledUncontrolledComponents } from "./components/controlleduncontrolledcompponents";
+import { UseReducerIndexData } from "./components/hooks/useReducer";
 
 
 
@@ -63,6 +64,14 @@ function App() {
       <Fruits />
       <hr />
       <ControlledUncontrolledComponents />
+      <hr />
+      <center>
+        <h1>useReducer Hook</h1>
+        <div>
+        <UseReducerIndexData />
+        </div>
+      </center>
+
     </div>
   );
 }
