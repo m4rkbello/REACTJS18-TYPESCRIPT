@@ -16,7 +16,6 @@ export const DataArrays = () => {
 
     console.log("DATAARRAYS RENDER!")
 
-
     return (
         <div>
             <h1>
@@ -27,10 +26,15 @@ export const DataArrays = () => {
                     return(
                         <li key={data.name}>
                             {data.name} + {data.quantity}
+                            {" "}<button>REMOVE</button>
                         </li>
                     )
                 })}
             </ul>
+            Name: <input /><br />
+            Quantity: <input /><br />
+            <button>Add Data</button>
+            
         </div>
     )
 };
