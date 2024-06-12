@@ -8,6 +8,8 @@ import { UseStateHook } from "./components/hooks/usestate";
 import { Fruits } from "./components/hooks/usestate/Fruits";
 import { ControlledUncontrolledComponents } from "./components/controlleduncontrolledcompponents";
 import { UseReducerIndexData } from "./components/hooks/useReducer";
+import { DataArrays } from "./components/hooks/useReducer/Datas";
+
 
 
 
@@ -69,6 +71,13 @@ function App() {
         <h1>useReducer Hook</h1>
         <div>
         <UseReducerIndexData />
+        </div>
+      </center>
+      <hr />
+      <center>
+        <h1>useReducer Hook + redux approach!</h1>
+        <div>
+        <DataArrays />
         </div>
       </center>
 
