@@ -5,13 +5,18 @@ interface Idata {
     quantity: number;
 }
 
-interface IdataAction {
-    type: "ADD_DATA" | "REMOVE_DATA";
+interface IAddAction {
+    type: "ADD_DATA";
     name: string;
     quantity: number;
 }
 
-const reducer: Reducer<Idata[], IdataAction> = (state, action) => {
+interface IRemoveAction {
+    type: "REMOVE_DATA";
+    name: string;
+}
+
+const reducer: Reducer<Idata[], IAddAction | IRemoveAction> = (state, action) => {
     switch (action.type) {
         case "ADD_DATA":
             return [
@@ -60,7 +65,6 @@ export const DataArrays = () => {
         dispatch({
             type: "REMOVE_DATA",
             name: name,
-            quantity: 0,
         });
     };
 
