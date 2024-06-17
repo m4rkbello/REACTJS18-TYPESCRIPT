@@ -32,12 +32,12 @@ export const UseReducerCalculator = () => {
     const [counter, dispatch] = useReducer(reducer, 1);
 
     return (
-        <div>
+        <div style={{ border: '1px solid black', padding: 5, width: 350  }}>
             <h1>CALCULATOR USING useREDUCER!</h1>
-            <AddUserReducer />
-            <SubtractUseReducer />
-            <DevideUseReducer />
-            <MultiplyUseReducer />
+            <AddUserReducer  dispatch={dispatch} />
+            <SubtractUseReducer  dispatch={dispatch}/>
+            <DevideUseReducer dispatch={dispatch} />
+            <MultiplyUseReducer dispatch={dispatch} />
         </div>
     )
 };
