@@ -1,5 +1,5 @@
 import React, {Reducer, useReducer} from "react";
-import { AddUserReducer } from "./add/AddUseReducer";
+import { AddUseReducer } from "./add/AddUseReducer";
 import { SubtractUseReducer } from "./subtract/SubtractUseReducer";
 import { DevideUseReducer } from "./devide/DevideUseReducer";
 import { MultiplyUseReducer } from "./multiply/MultiplyUseReducer";
@@ -34,7 +34,7 @@ export const UseReducerCalculator = () => {
     return (
         <div style={{ border: '1px solid black', padding: 5, width: 350  }}>
             <h1>CALCULATOR USING useREDUCER!</h1>
-            <AddUserReducer  dispatch={dispatch} />
+            <AddUseReducer  dispatch={dispatch} />
             <SubtractUseReducer  dispatch={dispatch}/>
             <DevideUseReducer dispatch={dispatch} />
             <MultiplyUseReducer dispatch={dispatch} />
