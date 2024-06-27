@@ -1,6 +1,13 @@
 import React from "react";
+import { Dispatch } from "react";
+import { IAction } from "../UseReducerCalculator";
 
-export const SubtractUseReducer = () => {
+
+interface Props {
+    dispatch: Dispatch<IAction>;
+}
+
+export const SubtractUseReducer: React.FC<Props> = ({ dispatch }) => {
     return (
         <div>
             <h1>SUBTRACT USE REDUCER!</h1>
