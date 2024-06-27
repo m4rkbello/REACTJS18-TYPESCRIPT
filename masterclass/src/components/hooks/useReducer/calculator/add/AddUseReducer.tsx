@@ -10,7 +10,7 @@ export const AddUseReducer: React.FC<Props> = ({ dispatch }) => {
     return (
         <div>
             <h1>ADD USE REDUCER</h1>
-            <button onClick={() => dispatch({ type: "ADD", number: 1 })}>Add 1</button>
+            <button onClick={() => dispatch({ type: "ADD", number: 1 })}>ADD</button>
         </div>
     )
 }
