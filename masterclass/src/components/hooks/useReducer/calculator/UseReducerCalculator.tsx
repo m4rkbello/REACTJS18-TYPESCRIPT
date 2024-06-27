@@ -27,7 +27,6 @@ const reducer: Reducer<number, IAction> = (state, action) => {
 }
 
 
-
 export const UseReducerCalculator = () => {
     const [counter, dispatch] = useReducer(reducer, 1);
 
