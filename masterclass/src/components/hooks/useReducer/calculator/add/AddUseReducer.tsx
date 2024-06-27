@@ -1,6 +1,6 @@
 import React from "react";
 import { Dispatch } from "react";
-import { IAction } from "../UseReducerCalculator"; // Adjust the import path accordingly
+import { IAction } from "../UseReducerCalculator";
 
 interface Props {
     dispatch: Dispatch<IAction>;
