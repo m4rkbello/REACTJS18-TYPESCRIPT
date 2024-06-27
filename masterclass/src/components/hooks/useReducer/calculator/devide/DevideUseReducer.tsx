@@ -13,6 +13,7 @@ export const DevideUseReducer: React.FC<Props> = ({ dispatch }) => {
     return (
         <div>
             <h1>DEVIDE USE REDUCER HOOK!</h1>
+            <button onClick={() => dispatch({ type: "DEVIDE", number: 1 })}>DEVIDE</button>
         </div>
     )
 };

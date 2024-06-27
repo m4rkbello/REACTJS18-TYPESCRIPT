@@ -11,6 +11,7 @@ export const SubtractUseReducer: React.FC<Props> = ({ dispatch }) => {
     return (
         <div>
             <h1>SUBTRACT USE REDUCER!</h1>
+            <button onClick={() => dispatch({ type: "SUBTRACT", number: 1 })}>SUBTRACT</button>
         </div>
     )
 }

@@ -11,6 +11,7 @@ export const MultiplyUseReducer: React.FC<Props> = ({ dispatch }) => {
     return(
         <div>
             <h1>MULTIPLY HOOK!</h1>
+            <button onClick={() => dispatch({ type: "MULTIPLY", number: 1 })}>MULTIPLY</button>
         </div>
     )
 };
