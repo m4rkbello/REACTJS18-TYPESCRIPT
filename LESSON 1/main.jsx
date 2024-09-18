@@ -3,16 +3,16 @@
 
 
 //FOR HOISTING ###################################################################################################################
-// console.log(typescript3);
 // var typescript1 = 'test';
 // let typescript2 = 'test';
 // const typescript3 = 'test';
+// console.log(typescript3);
 
 //GLOBAL SCOPE WITH HOISTING ISSUE!
+// typescript();
 // function typescript(){
 //     console.log("MASTER COURSE!");
 // }
-// typescript();
 
 
 //FUNCTION BLOCK SCOPE  ##########################################################################################################
@@ -30,11 +30,16 @@
 // console.log(typescript);
 
 //FUNCTION REFACTORY SYNTAX
-// for(let ez = 0; ez < 3; ez++){
-//     (function test(o){
-//         alert(o);
-//     })(ez)
-// }
+for(let ez = 0; ez < 3; ez++){
+    (function test(o){
+        alert(o);
+    })(ez)
+
+
+    // setTimeout(() => {
+    //     alert(ez);
+    // }, 100 )
+}
 
 //PRIMITIVE TYPES VALUES ###########################################################################################################
 // let firstNumber = 100;
