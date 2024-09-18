@@ -92,9 +92,6 @@
 // console.log("ORIGINAL", data);
 // console.log("COPY", copy);
 
-
-
-
 // const data = {
 //     test: 'test',
 //     userDetails: {
@@ -115,25 +112,25 @@
 
 
 //FOR DEEP COPY USING JSON.PARSE(STRINGIFY)
-// const data = {
-//     test: 'test',
-//     userDetails: {
-//         address: 
-//         {
-//             municipality: 'montevista',
-//             province: 'davao de oro',
-//             country: 'philippines'
-//         }
-//     },
-//     myFn: () => {},
-//     undef: undefined,
-// }
-// //gamit ug Object.assign(()); method
-// const copy = JSON.parse(JSON.stringify(data));
-// data.test = 'PADAYON!';
+const data = {
+    test: 'test',
+    userDetails: {
+        address: 
+        {
+            municipality: 'montevista',
+            province: 'davao de oro',
+            country: 'philippines'
+        }
+    },
+    myFn: () => {},
+    undef: undefined,
+}
+//gamit ug Object.assign(()); method
+const copy = JSON.parse(JSON.stringify(data));
+data.test = 'PADAYON!';
 
-// console.log("COPY", copy);
-// console.log("ORIGINAL", data);
+console.log("COPY", copy);
+console.log("ORIGINAL", data);
 
 
 //SHALLOW COPY AND DEEP COPY IN AN ARRAY 
