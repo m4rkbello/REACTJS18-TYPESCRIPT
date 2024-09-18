@@ -30,16 +30,16 @@
 // console.log(typescript);
 
 //FUNCTION REFACTORY SYNTAX
-for(let ez = 0; ez < 3; ez++){
-    (function test(o){
-        alert(o);
-    })(ez)
+// for(let ez = 0; ez < 3; ez++){
+//     (function test(o){
+//         alert(o);
+//     })(ez)
 
 
-    // setTimeout(() => {
-    //     alert(ez);
-    // }, 100 )
-}
+//     setTimeout(() => {
+//         alert(ez);
+//     }, 100 )
+// }
 
 //PRIMITIVE TYPES VALUES ###########################################################################################################
 // let firstNumber = 100;
@@ -70,15 +70,18 @@ for(let ez = 0; ez < 3; ez++){
 
 //OBJECTS AND ARRAYS COPYING USING SHALLOW COPY AND DEEP COPY! #############################################################################
 
-//reference type deep copy
+// reference type deep copy
 // const data = {
 //     test: 'test',
 //     userDetails: {
 //         address: 
-//         {
-//             municipality: 'montevista',
+//         {    
+//             country: 'philippines',
+//             state: 'mind the now',
+//             region: 'Region XI',
 //             province: 'davao de oro',
-//             country: 'philippines'
+//             municipality: 'montevista',
+//             barangay: 'linoan',
 //         }
 //     }
 // }
@@ -88,6 +91,9 @@ for(let ez = 0; ez < 3; ez++){
 
 // console.log("ORIGINAL", data);
 // console.log("COPY", copy);
+
+
+
 
 // const data = {
 //     test: 'test',
