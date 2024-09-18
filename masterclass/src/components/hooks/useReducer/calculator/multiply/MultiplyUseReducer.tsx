@@ -7,6 +7,7 @@ interface Props {
     dispatch: Dispatch<IAction>;
 }
 
+
 export const MultiplyUseReducer: React.FC<Props> = ({ dispatch }) => {
     return(
         <div>
